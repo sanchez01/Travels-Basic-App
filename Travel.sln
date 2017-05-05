@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Messaging", "Travel.Messaging\Travel.Messaging.csproj", "{DC61E054-4477-4DE3-8ED0-210D4ECE239B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Utils", "Travel.Utils\Travel.Utils.csproj", "{A4603452-859E-49BC-9401-6833430E3B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Models", "Travel.Models\Travel.Models.csproj", "{27A8A41C-BE2F-4E38-8DA6-93D522C148BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC61E054-4477-4DE3-8ED0-210D4ECE239B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC61E054-4477-4DE3-8ED0-210D4ECE239B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC61E054-4477-4DE3-8ED0-210D4ECE239B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC61E054-4477-4DE3-8ED0-210D4ECE239B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4603452-859E-49BC-9401-6833430E3B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4603452-859E-49BC-9401-6833430E3B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4603452-859E-49BC-9401-6833430E3B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4603452-859E-49BC-9401-6833430E3B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A8A41C-BE2F-4E38-8DA6-93D522C148BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A8A41C-BE2F-4E38-8DA6-93D522C148BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A8A41C-BE2F-4E38-8DA6-93D522C148BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A8A41C-BE2F-4E38-8DA6-93D522C148BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
