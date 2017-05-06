@@ -11,7 +11,7 @@ namespace Travel.Data
 {
     public class Database : DbContext, IDataContext
     {
-        public Database(): base("AppDbContext") { }
+        public Database(): base("ApplicationDbContext") { }
 
         public DbSet<Models.Registration.Travel> Travel { get; set; }
 
