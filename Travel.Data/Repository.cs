@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Travel.Data
 {
-    internal abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
+    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
     {
         private readonly IDataContext _dataContext;
 
