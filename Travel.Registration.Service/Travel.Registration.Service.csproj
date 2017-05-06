@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC61E054-4477-4DE3-8ED0-210D4ECE239B}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{9BD32604-55CB-443D-AA32-64A1E49AB401}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Travel.Messaging</RootNamespace>
-    <AssemblyName>Travel.Messaging</AssemblyName>
+    <RootNamespace>Travel.Registration.Service</RootNamespace>
+    <AssemblyName>Travel.Registration.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -28,6 +28,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GreenPipes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
@@ -58,19 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusConfigurator.cs" />
-    <Compile Include="Commands\IRegisterTravelCommand.cs" />
-    <Compile Include="Events\ITravelReceivedEvent.cs" />
+    <Compile Include="Consumer\TravelRegisteredConsumer.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Travel.Messaging\Travel.Messaging.csproj">
+      <Project>{dc61e054-4477-4de3-8ed0-210d4ece239b}</Project>
+      <Name>Travel.Messaging</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Travel.Utils\Travel.Utils.csproj">
       <Project>{a4603452-859e-49bc-9401-6833430e3b1d}</Project>
       <Name>Travel.Utils</Name>

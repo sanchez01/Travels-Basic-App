@@ -4,6 +4,7 @@ namespace Travel.Messaging.Commands
 {
     public interface IRegisterTravelCommand
     {
+        int Id { get; }
         string FirstName { get;  }
         string LastName { get;  }
         string NatureTravel { get;  }
