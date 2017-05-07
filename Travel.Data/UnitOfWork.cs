@@ -6,7 +6,7 @@ using Travel.Data.Repositories;
 
 namespace Travel.Data
 {
-    internal abstract class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly IDataContext _dataContext;
 
