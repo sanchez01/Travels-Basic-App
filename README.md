@@ -11,3 +11,5 @@
  Getting Started 
  ---------------
  To build this project, run Nuget Package restore and then run <a href = "https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx"> Entity Framework Database Migrations </a> on your SQL Server instance that are within the Travel.Data project.
+
+Create a virtual host named Travels on your RabbitMQ Server instance using the <a href = "https://www.rabbitmq.com/management.html">RabbitMQ Management plugin.</a>.
