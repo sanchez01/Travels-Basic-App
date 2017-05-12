@@ -11,6 +11,7 @@ namespace Travel.Messaging
     {
         public static IBusControl Configure(Action<IRabbitMqBusFactoryConfigurator, IRabbitMqHost> registrationAction = null)
         {
+            
             var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
             {
                 var host = cfg.Host(new Uri(Constants.RabbitMqUri), hst =>
