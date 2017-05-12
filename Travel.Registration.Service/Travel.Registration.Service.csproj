@@ -64,14 +64,23 @@
     <Compile Include="Consumer\TravelRegisteredConsumer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TravelRegistrationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Travel.Data\Travel.Data.csproj">
+      <Project>{B50B2E53-7BD4-46A9-887A-00A7F853C6F8}</Project>
+      <Name>Travel.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Travel.Messaging\Travel.Messaging.csproj">
       <Project>{dc61e054-4477-4de3-8ed0-210d4ece239b}</Project>
       <Name>Travel.Messaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Travel.Models\Travel.Models.csproj">
+      <Project>{27A8A41C-BE2F-4E38-8DA6-93D522C148BC}</Project>
+      <Name>Travel.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\Travel.Utils\Travel.Utils.csproj">
       <Project>{a4603452-859e-49bc-9401-6833430e3b1d}</Project>

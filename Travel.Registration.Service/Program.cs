@@ -17,7 +17,7 @@ namespace Travel.Registration.Service
             {
                 cfg.ReceiveEndpoint(host, Constants.RegisterTravelServiceQueue, ce =>
                 {
-                    ce.Consumer<TravelRegisteredConsumer>();
+                    ce.Consumer<TravelRegisteredConsumer>();    
                 });
 
             });
